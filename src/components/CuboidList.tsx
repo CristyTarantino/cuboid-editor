@@ -1,5 +1,5 @@
 import React from 'react';
-import {Cuboid as CuboidType} from "../types";
+import {Cuboid as CuboidType} from "../../types";
 import Cuboid from "./Cuboid";
 
 interface CuboidListProp {

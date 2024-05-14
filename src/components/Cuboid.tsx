@@ -1,6 +1,6 @@
 import {Box} from "@react-three/drei";
 import React from "react";
-import {Cuboid} from "../types";
+import {Cuboid} from "../../types";
 
 interface CuboidComponentProps extends Cuboid {
     onSelect: (id: string) => void;

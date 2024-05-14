@@ -1,14 +1,15 @@
 import React, {useState} from 'react';
 import {Canvas} from '@react-three/fiber';
 import {OrbitControls} from '@react-three/drei';
-import {Cuboid} from "../types";
-import CuboidControls from "./CuboidControls";
-import CuboidForm from "./CuboidForm";
-import CuboidList from "./CuboidList";
+import {Cuboid} from "../../types";
+import {CuboidControls} from "../components/CuboidControls";
+import CuboidForm from "../components/CuboidForm";
+import CuboidList from "../components/CuboidList";
 import {IChangeEvent} from "@rjsf/core";
 import {v4 as uuidv4} from 'uuid'
-import PointCloudAndCuboids from './PointCloudAndCuboids';
+import PointCloudAndCuboids from '../components/PointCloudAndCuboids';
 import styles from './CuboidEditor.module.css';
+
 export const CuboidEditor = () => {
     const [cuboids, setCuboids] = useState<Cuboid[]>([
         {position: [0, 0, 0], rotation: [0, 0, 0], dimensions: [1, 1, 1], id: uuidv4()}

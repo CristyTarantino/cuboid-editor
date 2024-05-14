@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {CuboidEditor} from './components/CuboidEditor';
+import {CuboidEditor} from './containers/CuboidEditor';
 
 function App() {
     return (
